@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1930e7c2820fb2755aacc3655338d9145d77c6162c4bc19125e084eb6714b7f6
-size 1124
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="94e07b9f-34d9-4108-a8fc-a1d8d8ee1dbc" name="rstdg@dg.rendersea.com:11300 key" url="dg.rendersea.com">
+        <fileTransfer rootFolder="/home/rstdg/pycharm_project/ZS-F-VQA-main" accessType="SFTP" host="dg.rendersea.com" port="11300" sshConfigId="42ec7378-6490-4cc5-9bd7-7b4b4aa3fc6a" sshConfig="rstdg@dg.rendersea.com:11300 password" />
+      </webServer>
+      <webServer id="75f2e992-b7ec-476f-8d4d-eeaef2fce742" name="dg.rendersea.com" url="http://dg.rendersea.com">
+        <fileTransfer accessType="WEBDAV" host="dg.rendersea.com" port="6180">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+    <groups>
+      <group>
+        <name>server</name>
+        <servers>
+          <name value="dg.rendersea.com" />
+        </servers>
+      </group>
+    </groups>
+  </component>
+</project>

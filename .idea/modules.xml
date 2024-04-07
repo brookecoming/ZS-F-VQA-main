@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:950f6e37b8ae3d2137d9111871222b4616768e2135fec001f67905ca80a73e33
-size 285
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/ZS-F-VQA-main.iml" filepath="$PROJECT_DIR$/.idea/ZS-F-VQA-main.iml" />
+    </modules>
+  </component>
+</project>

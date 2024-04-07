@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7d6e3f987267355ec4c9d3ffacc841a77c9bd279624d7fef117ede561b615ef1
-size 171
+# assert args.fusion_model in ['SAN', 'MLP', 'BAN', 'UD']
+
+from .fusion_updn import UD
+from .fusion_ban import BAN
+from .fusion_san import SAN
+from .fusion_mlp import MLP

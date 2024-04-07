@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5301a409121d13cd49bc7b08cdc8f16cc47268284842ecabf93eb86c184be97b
-size 573
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="PyDocumentationSettings">
+    <option name="format" value="PLAIN" />
+    <option name="myDocStringFormat" value="Plain" />
+  </component>
+  <component name="TestRunnerService">
+    <option name="PROJECT_TEST_RUNNER" value="py.test" />
+  </component>
+</module>

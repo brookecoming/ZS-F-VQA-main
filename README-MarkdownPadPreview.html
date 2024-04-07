@@ -1,3 +1,481 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:df34d9331f9fbc63a4db28e059916829146a0efdd956081f77886ed7827d829b
-size 16387
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>README.md</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+body{
+    margin: 0 auto;
+    font-family: Georgia, Palatino, serif;
+    color: #444444;
+    line-height: 1;
+    max-width: 960px;
+    padding: 5px;
+}
+h1, h2, h3, h4 {
+    color: #111111;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, p {
+    margin-bottom: 16px;
+    padding: 0;
+}
+h1 {
+    font-size: 28px;
+}
+h2 {
+    font-size: 22px;
+    margin: 20px 0 6px;
+}
+h3 {
+    font-size: 21px;
+}
+h4 {
+    font-size: 18px;
+}
+h5 {
+    font-size: 16px;
+}
+a {
+    color: #0099ff;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+a:hover {
+    text-decoration: none;
+    color: #ff6600;
+}
+a:visited {
+    color: purple;
+}
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+li {
+    line-height: 24px;
+    margin-left: 44px;
+}
+li ul, li ul {
+    margin-left: 24px;
+}
+p, ul, ol {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 540px;
+}
+pre {
+    padding: 0px 24px;
+    max-width: 800px;
+    white-space: pre-wrap;
+}
+code {
+    font-family: Consolas, Monaco, Andale Mono, monospace;
+    line-height: 1.5;
+    font-size: 13px;
+}
+aside {
+    display: block;
+    float: right;
+    width: 390px;
+}
+blockquote {
+    border-left:.5em solid #eee;
+    padding: 0 2em;
+    margin-left:0;
+    max-width: 476px;
+}
+blockquote  cite {
+    font-size:14px;
+    line-height:20px;
+    color:#bfbfbf;
+}
+blockquote cite:before {
+    content: '\2014 \00A0';
+}
+
+blockquote p {  
+    color: #666;
+    max-width: 460px;
+}
+hr {
+    width: 540px;
+    text-align: left;
+    margin: 0 auto 0 0;
+    color: #999;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+button, input {
+  line-height: normal;
+  *overflow: visible;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+input[type=checkbox], input[type=radio] {
+  cursor: pointer;
+}
+/* override default chrome & firefox settings */
+input:not([type="image"]), textarea {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+label,
+input,
+select,
+textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: normal;
+  margin-bottom: 18px;
+}
+input[type=checkbox], input[type=radio] {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+input[type=text],
+input[type=password],
+textarea,
+select {
+  display: inline-block;
+  width: 210px;
+  padding: 4px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  height: 18px;
+  color: #808080;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+select, input[type=file] {
+  height: 27px;
+  line-height: 27px;
+}
+textarea {
+  height: auto;
+}
+
+/* grey out placeholders */
+:-moz-placeholder {
+  color: #bfbfbf;
+}
+::-webkit-input-placeholder {
+  color: #bfbfbf;
+}
+
+input[type=text],
+input[type=password],
+select,
+textarea {
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+  outline: none;
+  border-color: rgba(82, 168, 236, 0.8);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+/* buttons */
+button {
+  display: inline-block;
+  padding: 4px 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #0064cd;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#049cdb), to(#0064cd));
+  background-image: -moz-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -ms-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #049cdb), color-stop(100%, #0064cd));
+  background-image: -webkit-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -o-linear-gradient(top, #049cdb, #0064cd);
+  background-image: linear-gradient(top, #049cdb, #0064cd);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid #004b9a;
+  border-bottom-color: #003f81;
+  -webkit-transition: 0.1s linear all;
+  -moz-transition: 0.1s linear all;
+  transition: 0.1s linear all;
+  border-color: #0064cd #0064cd #003f81;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+button:hover {
+  color: #fff;
+  background-position: 0 -15px;
+  text-decoration: none;
+}
+button:active {
+  -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* CSS stylesheet is based on Kevin Burke's Markdown.css project (http://kevinburke.bitbucket.org/markdowncss) */
+</style>
+</head>
+<body>
+<h1>ZS-F-VQA</h1>
+
+<p><img src="https://img.shields.io/badge/version-1.0.1-blue" alt="" /><br />
+<a href="https://github.com/China-UK-ZSL/ZS-F-VQA/blob/main/LICENSE"><img src="https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000" alt="license" /></a><br />
+<a href="http://arxiv.org/abs/2107.05348"><img src="https://img.shields.io/badge/arXiv-2107.05348-red" alt="arxiv badge" /></a></p>
+
+<p><a href="https://arxiv.org/abs/2107.05348"><em>Zero-shot Visual Question Answering using Knowledge Graph</em></a> [ ISWC 2021 ]</p>
+
+<blockquote>
+  <p>In this work, we propose a Zero-shot VQA algorithm using knowledge graphs and a mask-based learning mechanism for<br />
+  better incorporating external knowledge, and present new answer-based Zero-shot VQA splits for the F-VQA dataset.</p>
+</blockquote>
+
+<h2>🔔 News</h2>
+
+<ul>
+<li><em>*<code>2024-02</code> We preprint our<br />
+Survey <a href="http://arxiv.org/abs/2402.05391">Knowledge Graphs Meet Multi-Modal Learning: A Comprehensive Survey</a>  [<a href="https://github.com/zjukg/KG-MM-Survey"><code>Repo</code></a>].<br />
+*</em></li>
+</ul>
+
+<h2>Model Architecture</h2>
+
+<p><img src="https://github.com/China-UK-ZSL/ZS-F-VQA/blob/main/figures/Model_architecture.png" alt="Model_architecture" /></p>
+
+<p><br /></p>
+
+<h2>Usage</h2>
+
+<h3>Requirements</h3>
+
+<ul>
+<li><code>python &gt;= 3.5</code></li>
+<li><code>PyTorch &gt;= 1.6.0</code></li>
+</ul>
+
+<p>For more detail of requirements:</p>
+
+<p><code>bash<br />
+ pip install -r requirements.txt<br />
+</code></p>
+
+<h3>1. Data</h3>
+
+<p>训练集和测试集说明</p>
+
+<p>训练集（train<em>data 和 train</em>seen_data）：</p>
+
+<p>用于训练模型的数据集。这些数据包括图片、相关的问题和正确的答案。模型通过学习这些问题与答案的对应关系，尝试理解和学习如何从给定的图像中提取信息以回答问题。<br />
+train<em>data 用于常规的训练。<br />
+train</em>seen_data 在零样本学习（ZSL）的上下文中使用，意味着这部分数据包含了在训练阶段“看到”的样本。</p>
+
+<p>测试集（test<em>data 和 test</em>unseen_data）：</p>
+
+<p>用于评估模型性能的数据集。这部分数据模型在训练阶段未曾“看到”，目的是测试模型对新问题和图像的回应能力。<br />
+test<em>data 是常规测试集，用来评估模型在看过的问题类型上的性能。<br />
+test</em>unseen_data 在零样本学习的场景下使用，包含模型在训练时未见过的问题或概念，用于评估模型泛化能力。</p>
+
+<ol>
+<li><p>Location of 5 <strong>F-VQA</strong> train / test data split:</p>
+
+<ul>
+<li><code>data/KG_VQA/fvqa/exp_data/train_data</code>  训练集已发放<br />
+example: all<em>qs</em>dict<em>release</em>train.json, all<em>qs</em>dict<em>release</em>train_500.json</li>
+<li><code>data/KG_VQA/fvqa/exp_data/test_data</code>   测试集已发放<br />
+example: all<em>qs</em>dict<em>release</em>test.json, all<em>qs</em>dict<em>release</em>test_500.json</li>
+</ul></li>
+<li><p>Location of 5 <strong>ZS-F-VQA</strong> train / test data split:</p>
+
+<ul>
+<li><code>data/KG_VQA/fvqa/exp_data/train_seen_data</code> 训练集已发放<br />
+example: all<em>qs</em>dict<em>release</em>train_500.json</li>
+<li><code>data/KG_VQA/fvqa/exp_data/test_unseen_data</code> 测试集已发放<br />
+<h2>  example: all<em>qs</em>dict<em>release</em>test_500.json</h2></li>
+</ul></li>
+<li><p>Answers are available at <code>data/KG_VQA/data/FVQA/new_dataset_release/.</code> 答案已发放<br />
+example: all<em>fact</em>triples<em>release.json, all</em>qs<em>dict</em>release.json, all<em>qs.dict</em>release<em>combine.json,<br />
+ans</em>tntity_map.txt等等</p></li>
+</ol>
+
+<p><strong>2. Image:</strong></p>
+
+<ul>
+<li>Image folder (put all your <code>.JPEG</code>/<code>.jpg</code> file here):<br />
+<code>data/KG_VQA/fvqa/exp_data/images/images</code></li>
+<li>Image feature:<br />
+<ul><br />
+<li><code>fvqa-resnet-14x14.h5</code><br /><br />
+pretrained: <a href="https://drive.google.com/file/d/1YG9hByw01_ZQ6_mKwehYiddG3x2Cxatu/view?usp=sharing">GoogleDrive</a><br /><br />
+or <a href="https://pan.baidu.com/s/1ks84AWSXxJJ_7LwnzWdEnQ">BaiduCloud</a> (password:16vd)</li><br />
+<li><code>fvqa36_imgid2idx.pkl</code> and <code>fvqa_36.hdf5</code><br /><br />
+pretrained: <a href="https://drive.google.com/file/d/1wfgmPhNF7DR7_yEAr8lxjtdsko7lLCWj/view?usp=sharing">GoogleDrive</a><br /><br />
+or <a href="https://pan.baidu.com/s/11KRiw2jvPBzgd3xUbynHjw?pwd=zsqa">BaiduCloud</a> (password:zsqa)</li><br />
+</ul></li>
+<li>Origin images are available at <a href="https://github.com/wangpengnorman/FVQA">FVQA</a><br />
+with <a href="https://www.dropbox.com/s/iyz6l7jhbt6jb7q/new_dataset_release.zip?dl=0">download_link</a>.</li>
+<li>Other vqa dataset: you could generate a pretrained image feature via this<br />
+way (<a href="https://github.com/hexiang-hu/answer_embedding/issues/3">Guidance</a> / <a href="https://github.com/Cyanogenoid/pytorch-vqa/blob/master/preprocess-images.py">code</a>)</li>
+<li>The generated <code>.h</code> file should be placed in :<br />
+<code>data/KG_VQA/fvqa/exp_data/common_data/.</code></li>
+</ul>
+
+<p><strong>Answer / Qusetion vocab:</strong></p>
+
+<ul>
+<li>The generated file <code>answer.vocab.fvqa.json</code> &amp; <code>question.vocab.fvqa.json</code>  now are available at :<br />
+<code>data/KG_VQA/fvqa/exp_data/common_data/.</code></li>
+<li>Other vqa dataset: code<br />
+for <a href="https://github.com/hexiang-hu/answer_embedding/blob/master/tools/preprocess_answer.py">process answer vocab</a><br />
+and <a href="https://github.com/hexiang-hu/answer_embedding/blob/master/tools/preprocess_question.py">process questions vocab</a></li>
+</ul>
+
+<hr />
+
+<h3>Pretrained Model (<a href="https://www.dropbox.com/sh/vp5asuivqpiir5w/AAC3k_gELrP4ydNNok_o1vlYa?dl=0">url</a>)</h3>
+
+<p>Download it and overwrite <code>data/KG_VQA/fvqa/model_save</code></p>
+
+<h3><a href="#content">Parameter</a></h3>
+
+<p><code><br />
+[--KGE {TransE,ComplEx,TransR,DistMult}] [--KGE_init KGE_INIT] [--GAE_init GAE_INIT] [--ZSL ZSL] [--entity_num {all,4302}] [--data_choice {0,1,2,3,4}]<br />
+               [--name NAME] [--no-tensorboard] --exp_name EXP_NAME [--dump_path DUMP_PATH] [--exp_id EXP_ID] [--random_seed RANDOM_SEED] [--freeze_w2v {0,1}]<br />
+               [--ans_net_lay {0,1,2}] [--fact_map {0,1}] [--relation_map {0,1}] [--now_test {0,1}] [--save_model {0,1}] [--joint_test_way {0,1}] [--top_rel TOP_REL]<br />
+               [--top_fact TOP_FACT] [--soft_score SOFT_SCORE] [--mrr MRR]<br />
+</code></p>
+
+<p>Available model for training: <code>Up-Down</code>, <code>BAN</code>, <code>SAN</code>, <code>MLP</code></p>
+
+<p><strong>You can try your own model via adding it (<code>.py</code>) to :</strong> <code>main/code/model/.</code></p>
+
+<p>For more details: <code>code/config.py</code></p>
+
+<hr />
+
+<h3>Running</h3>
+
+<p><code>cd code</code></p>
+
+<p><strong>For data check:</strong></p>
+
+<ul>
+<li><code>python deal_data.py --exp_name data_check</code></li>
+</ul>
+
+<p><strong>General VQA:</strong></p>
+
+<ul>
+<li>train:<br />
+<code>bash run_FVQA_train.sh</code></li>
+<li>test:<br />
+<code>bash run_FVQA.sh</code></li>
+</ul>
+
+<p><strong>ZSL/GZSL VQA:</strong></p>
+
+<ul>
+<li>train:<br />
+<code>bash run_ZSL_train.sh</code></li>
+<li>test:<br />
+<code>bash run_ZSL.sh</code></li>
+</ul>
+
+<p><strong>Note</strong>:</p>
+
+<ul>
+<li>you can open the <code>.sh</code> file for <a href="#Parameter">parameter</a> modification.</li>
+</ul>
+
+<p><strong>Result:</strong></p>
+
+<ul>
+<li>Log file will be saved to: <code>code/dump</code></li>
+<li>model will be saved to: <code>data/KG_VQA/fvqa/model_save</code></li>
+</ul>
+
+<p><br /></p>
+
+<h2>Explainable</h2>
+
+<p><img src="https://github.com/China-UK-ZSL/ZS-F-VQA/blob/main/figures/all_explainable.png" alt="explainable" /></p>
+
+<p><br /></p>
+
+<h2>Acknowledgements</h2>
+
+<p>Thanks for the following released works:</p>
+
+<blockquote>
+  <p><a href="https://github.com/garrettj403/SciencePlots">SciencePlots</a>, <a href="https://github.com/erobic/ramen">ramen</a>, <a href="https://github.com/zfjsail/gae-pytorch">GAE</a>, <a href="https://github.com/markdtw/vqa-winner-cvprw-2017">vqa-winner-cvprw-2017</a>, <a href="https://github.com/jwyang/faster-rcnn.pytorch">faster-rcnn</a>, <a href="https://github.com/Shivanshu-Gupta/Visual-Question-Answering">VQA</a>, <a href="https://github.com/jnhwkim/ban-vqa">BAN</a>, <a href="https://github.com/allenai/commonsense-kg-completion">commonsense-kg-completion</a>, <a href="https://github.com/hengyuan-hu/bottom-up-attention-vqa">bottom-up-attention-vqa</a>, <a href="https://github.com/wangpengnorman/FVQA">FVQA</a>, <a href="https://github.com/hexiang-hu/answer_embedding">answer_embedding</a>, <a href="https://github.com/RamonYeung/torchlight">torchlight</a></p>
+</blockquote>
+
+<h2>Cite:</h2>
+
+<p>Please condiser citing this paper if you use the code</p>
+
+<p><code>bigquery<br />
+@inproceedings{chen2021zero,<br />
+  title={Zero-Shot Visual Question Answering Using Knowledge Graph},<br />
+  author={Chen, Zhuo and Chen, Jiaoyan and Geng, Yuxia and Pan, Jeff Z and Yuan, Zonggang and Chen, Huajun},<br />
+  booktitle={International Semantic Web Conference},<br />
+  pages={146--162},<br />
+  year={2021},<br />
+  organization={Springer}<br />
+}<br />
+</code></p>
+
+<p>For more details, please submit a issue or contact <a href="https://github.com/hackerchenzhuo">Zhuo Chen</a>.<br />
+<a href="https://info.flagcounter.com/VOlE"><img src="https://s11.flagcounter.com/count2/VOlE/bg_FFFFFF/txt_000000/border_F7F7F7/columns_6/maxflags_12/viewers_3/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a></p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

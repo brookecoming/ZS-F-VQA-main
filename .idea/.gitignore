@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aefe07a52418e9d0c587b31238f7503d35e75034a769547d5e56851a1f822ccf
-size 190
+# 默认忽略的文件
+/shelf/
+/workspace.xml
+# 基于编辑器的 HTTP 客户端请求
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml

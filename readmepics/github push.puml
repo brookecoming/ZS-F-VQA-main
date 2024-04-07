@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c6f31b18d872e71fdce63838f950206dba35ca85c5380eb06e966cc54588cd9d
-size 441
+@startuml
+!theme plain
+
+(*) --> "启动Git推送"
+
+--> "执行git push命令"
+
+--> "Git提示用户认证"
+
+if "用户完成认证" then
+    -->[true] "Git枚举对象"
+else
+    -->[false] "结束推送操作"
+    --> (*)
+endif
+
+--> "Git压缩对象以减少数据量"
+
+--> "Git通过网络传输压缩后的对象到GitHub"
+
+--> "GitHub接收数据并更新远程仓库"
+
+--> "推送操作完成"
+--> (*)
+
+@enduml

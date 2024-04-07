@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:21e99a6d49ea789cb2f1a783b4bff9fa0ad8e7edb02ffcbd337304fc01538c73
-size 730
+@startuml
+!theme plain
+
+participant 用户
+entity "VQA 系统" as VQA
+database "图像理解模块\n(CNN/Transformer)" as ImageUnderstanding
+database "问题理解模块\n(RNN/LSTM/Transformer)" as QuestionUnderstanding
+database "多模态融合模块\n(注意力机制)" as Fusion
+database "答案生成模块\n(分类器/序列生成模型)" as AnswerGeneration
+
+用户 -> VQA : 提交图像和问题
+VQA -> ImageUnderstanding : 提取图像特征
+VQA -> QuestionUnderstanding : 分析问题
+ImageUnderstanding -> Fusion : 图像特征
+QuestionUnderstanding -> Fusion : 问题理解
+Fusion -> AnswerGeneration : 融合后的信息
+AnswerGeneration -> VQA : 生成答案
+VQA -> 用户 : 返回答案
+
+@enduml

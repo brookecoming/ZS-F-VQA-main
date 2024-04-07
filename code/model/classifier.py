@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4cea8c777f337bc56e428e1e11b65f35a294856046b9e0ccc6a6549330fc76e4
-size 565
+import torch.nn as nn
+from torch.nn.utils.weight_norm import weight_norm
+
+
+class SimpleClassifier(nn.Module):
+    def __init__(self, in_dim, hid_dim, out_dim, dropout):
+        super(SimpleClassifier, self).__init__()
+        layers = [
+            weight_norm(nn.Linear(in_dim, hid_dim), dim=None),
+            nn.ReLU(),
+            nn.Dropout(dropout, inplace=True),
+            weight_norm(nn.Linear(hid_dim, out_dim), dim=None)
+        ]
+        self.main = nn.Sequential(*layers)
+
+    def forward(self, x):
+        logits = self.main(x)
+        return logits

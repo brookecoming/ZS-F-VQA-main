@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:99f674fabaff70189af00f8da1a5b150e1d98dce4da7060f041cef18c7f1b169
-size 484
+<component name="ProjectCodeStyleConfiguration">
+  <code_scheme name="Project" version="173">
+    <Python>
+      <option name="BLANK_LINES_AROUND_TOP_LEVEL_CLASSES_FUNCTIONS" value="0" />
+      <option name="DICT_ALIGNMENT" value="1" />
+    </Python>
+    <codeStyleSettings language="Python">
+      <option name="KEEP_BLANK_LINES_IN_DECLARATIONS" value="0" />
+      <option name="KEEP_BLANK_LINES_IN_CODE" value="0" />
+    </codeStyleSettings>
+  </code_scheme>
+</component>

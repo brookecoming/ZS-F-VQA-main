@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ed60ee84817c9c2b954d69ba3f841e1c9a4d23083fc5d9e7a940c5859dc7e53c
-size 269
+data=3;
+ke=10;
+kr=3;
+score=10;
+zsl=0;
+python joint_test.py --gpu_id 1 --exp_name fusion_prediction --ZSL "${zsl}" --exp_id rel"${kr}"_fact"${ke}"data_"${data}"score_"${score}" --data_choice "${data}" --top_rel "${kr}" --top_fact "${ke}" --soft_score "${score}"  --mrr 1

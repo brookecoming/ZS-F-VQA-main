@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:34b3b71d9af756f4159b2828ec499fd7da7d8375b1d522309b83a5a3556dcf04
-size 1057
+C:\ZS-F-VQA-main\other_tools\check_git_file_size.py
+C:\ZS-F-VQA-main\.git\objects\3b\4f381a9dc608aaee6b6ad9d7d951f8ec7bdbf9
+C:\ZS-F-VQA-main\.git\objects\68\4a276dddce58fe192607f1d3856ff10374788f
+C:\ZS-F-VQA-main\.git\objects\6e\c5cc917825c7314a80323068d4d172873bc765
+C:\ZS-F-VQA-main\.git\objects\7f\96e1796fe1d6b4b7bcfa047e0467086c4fc2b0
+C:\ZS-F-VQA-main\.git\objects\d3\27d0fd8553fc733bb12ce11d494851e45a622f
+C:\ZS-F-VQA-main\.git\objects\d9\695817b244c4e751faacff5f9410b1150eb202
+C:\ZS-F-VQA-main\data\KG_VQA\fvqa\exp_data\images\images\fvqa-resnet-14x14.h5
+C:\ZS-F-VQA-main\data\KG_VQA\fvqa\model_save\fusion\answer_SAN_3.pkl
+C:\ZS-F-VQA-main\data\KG_VQA\fvqa\model_save\fusion\fact_SAN_3.pkl
+C:\ZS-F-VQA-main\data\KG_VQA\fvqa\model_save\fusion\general_answer_SAN_3.pkl
+C:\ZS-F-VQA-main\data\KG_VQA\fvqa\model_save\fusion\general_fact_SAN_3.pkl
+C:\ZS-F-VQA-main\data\KG_VQA\fvqa\model_save\fusion\general_relation_SAN_3.pkl
+C:\ZS-F-VQA-main\data\KG_VQA\fvqa\model_save\fusion\relation_SAN_3.pkl
+C:\ZS-F-VQA-main\README.md
+venv
+.venv
+.idea
+
