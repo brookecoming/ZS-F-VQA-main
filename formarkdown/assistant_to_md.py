@@ -1,18 +1,24 @@
 class Assistant_to_md:
-    def read_chat_records(file_path):
+    def __init__(self):
+        self.file_path = 'chat_records.txt'
+
+    def read_chat_records(self, file_path):
         with open(file_path, 'r', encoding='utf-8') as file:
-            return file.readlines()
+            self.chat_records = file.readlines()
 
-    file_path = 'chat_records.txt'
-    chat_records = read_chat_records(file_path)
+    def write_chat_records_to_md(self):
+        # Create or open output.md in write mode
+        with open('output.md', 'w', encoding='utf-8') as file:
+            for record in self.chat_records:
+                # Write each chat record to the file, add a newline character for formatting
+                file.write(record.strip() + '\n')
+class Main:
+    def __init__(self):
+        self.assistant = Assistant_to_md()
 
-    # 输出读取的对话记录
-    for record in chat_records:
-        print(record.strip())  # .strip()用于去除每行末尾的换行符
-
-Class Main:
+    def execute(self):
+        self.assistant.read_chat_records(self.assistant.file_path)
+        self.assistant.write_chat_records_to_md()
 if __name__ == '__main__':
-    file_path = 'chat_records.txt'
-    obj=  Assistant_to_md()
-    obj.read_chat_records(file_path)
-
+    main = Main()
+    main.execute()
