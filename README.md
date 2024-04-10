@@ -1,31 +1,29 @@
+
 # ZS-F-VQA
 
-![](https://img.shields.io/badge/version-1.0.1-blue)
+![version](https://img.shields.io/badge/version-1.0.1-blue)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/China-UK-ZSL/ZS-F-VQA/blob/main/LICENSE)
 [![arxiv badge](https://img.shields.io/badge/arXiv-2107.05348-red)](http://arxiv.org/abs/2107.05348)
 
-[//]: # (![ 文章来源:ISWC 2021 ][*Zero-shot Visual Question Answering using Knowledge Graph*]&#40;https://arxiv.org/abs/2107.05348&#41;"haha")
+ 
 
 ## 基础知识VQA处理流程
 
-[//]: # (![vqa procedure]&#40;/readmepics/vqa procedure.png "这是基本的vqa处理流程"&#41;)
-
 ![](./assets/vqa%20procedure.png)
 
-## 🔔  文章来源:
+## 🔔  文章来源: Zero-shot Visual Question Answering using Knowledge Graph
 
-[[ISWC 2021 ](https://arxiv.org/abs/2107.05348)]   https://arxiv.org/abs/2107.05348
+[ISWC 2021 ](https://arxiv.org/abs/2107.05348), or url: https://arxiv.org/abs/2107.05348
 
-> Abstract
-> In this work, we propose a Zero-shot VQA algorithm using knowledge graphs and a mask-based learning mechanism for
-> better incorporating external knowledge, and present new answer-based Zero-shot VQA splits for the F-VQA dataset.
+> [!IMPORTANT]
+>
+> Abstract: 
+> In this work, we propose a Zero-shot VQA algorithm using knowledge graphs and a mask-based learning mechanism for better incorporating external knowledge, and present new answer-based Zero-shot VQA splits for the F-VQA dataset.
 
 ## 🔔 新闻
 
-- `2024-02`
-  We preprint our
-  Survey at arxiv: [Knowledge Graphs Meet Multi-Modal Learning: A Comprehensive Survey](http://arxiv.org/abs/2402.05391); or https://arxiv.org/abs/2402.05391
-
+- `2024-02`We preprint our Survey at arxiv: [Knowledge Graphs Meet Multi-Modal Learning: A Comprehensive Survey](http://arxiv.org/abs/2402.05391); or https://arxiv.org/abs/2402.05391
+  
 - [`Repo for the servey `](https://github.com/zjukg/KG-MM-Survey), or https://github.com/zjukg/KG-MM-Survey
 
 ## 🔔 模型架构
@@ -70,7 +68,7 @@ pytest-mock==3.14.0
 
 ### 2. 数据准备
 
-1. **Location of 5 F-VQA train / test data split:<br>**
+1.  **Location of 5 F-VQA train / test data split:<br>**
 
 - ```data/KG_VQA/fvqa/exp_data/train_data```  <br>
   //训练集已发放, 如: all_qs_dict_release_train.json, all_qs_dict_release_train_500.json
@@ -89,16 +87,17 @@ pytest-mock==3.14.0
    //答案已发放, 如: all_fact_triples_release.json, all_qs_dict_release.json, all_qs.dict_release_combine.json,
    ans_tntity_map.txt等等
 
-> `训练集和测试集说明`
-> `训练集（train_data 和 train_seen_data）：
-> `用于训练模型的数据集。这些数据包括图片、相关的问题和正确的答案。模型通过学习这些问题与答案的对应关系，尝试理解和学习如何从给定的图像中提取信息以回答问题。`
-> `train_data 用于常规的训练。`
-> `train_seen_data 在零样本学习（ZSL）的上下文中使用，意味着这部分数据包含了在训练阶段“看到”的样本。
->
-> 测试集（test_data 和 test_unseen_data）：`
-> 用于评估模型性能的数据集。这部分数据模型在训练阶段未曾“看到”，目的是测试模型对新问题和图像的回应能力。`
-> `test_data 是常规测试集，用来评估模型在看过的问题类型上的性能。`
-> `test_unseen_data 在零样本学习的场景下使用，包含模型在训练时未见过的问题或概念，用于评估模型泛化能力。`
+> [!NOTE]
+ **训练集和测试集说明**
+  **训练集（train_data 和 train_seen_data）：**
+  用于训练模型的数据集。这些数据包括图片、相关的问题和正确的答案。模型通过学习这些问题与答案的对应关系，尝试理解和学习如何从给定的图像中提取信息以回答问题。
+  train_data 用于常规的训练。
+  train_seen_data 在零样本学习（ZSL）的上下文中使用，意味着这部分数据包含了在训练阶段“看到”的样本。 
+
+   **测试集（test_data 和 test_unseen_data）：**
+   用于评估模型性能的数据集。这部分数据模型在训练阶段未曾“看到”，目的是测试模型对新问题和图像的回应能力。
+   test_data 是常规测试集，用来评估模型在看过的问题类型上的性能。
+   test_unseen_data 在零样本学习的场景下使用，包含模型在训练时未见过的问题或概念，用于评估模型泛化能力。"
 
 ### 3 图片准备
 
