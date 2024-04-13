@@ -1,11 +1,8 @@
-
-# ZS-F-VQA
+ ZS-F-VQA
 
 ![version](https://img.shields.io/badge/version-1.0.1-blue)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/China-UK-ZSL/ZS-F-VQA/blob/main/LICENSE)
 [![arxiv badge](https://img.shields.io/badge/arXiv-2107.05348-red)](http://arxiv.org/abs/2107.05348)
-
- 
 
 ## 基础知识VQA处理流程
 
@@ -16,14 +13,14 @@
 [ISWC 2021 ](https://arxiv.org/abs/2107.05348), or url: https://arxiv.org/abs/2107.05348
 
 > [!IMPORTANT]
->
+> 
 > Abstract: 
 > In this work, we propose a Zero-shot VQA algorithm using knowledge graphs and a mask-based learning mechanism for better incorporating external knowledge, and present new answer-based Zero-shot VQA splits for the F-VQA dataset.
 
 ## 🔔 新闻
 
 - `2024-02`We preprint our Survey at arxiv: [Knowledge Graphs Meet Multi-Modal Learning: A Comprehensive Survey](http://arxiv.org/abs/2402.05391); or https://arxiv.org/abs/2402.05391
-  
+
 - [`Repo for the servey `](https://github.com/zjukg/KG-MM-Survey), or https://github.com/zjukg/KG-MM-Survey
 
 ## 🔔 模型架构
@@ -68,28 +65,23 @@ pytest-mock==3.14.0
 
 ### 2. 数据准备
 
-1.  **Location of 5 F-VQA train / test data split:<br>**
-
+1. **Location of 5 F-VQA train / test data split:<br>**
 - ```data/KG_VQA/fvqa/exp_data/train_data```  <br>
   //训练集已发放, 如: all_qs_dict_release_train.json, all_qs_dict_release_train_500.json
 - ```data/KG_VQA/fvqa/exp_data/test_data```  <br>
   //测试集已发放, 如: all_qs_dict_release_test.json, all_qs_dict_release_test_500.json
-
 2. **Location of 5 ZS-F-VQA train / test data split:<br>**
-
 - ```data/KG_VQA/fvqa/exp_data/train_seen_data``` <br>
-  //训练集已发放, 如: all_qs_dict_release_train_500.json
+  
+  ```
 - ```data/KG_VQA/fvqa/exp_data/test_unseen_data``` <br>
   //测试集已发放, 如: all_qs_dict_release_test_500.json
-
-
 3. **Answers are available at ``data/KG_VQA/data/FVQA/new_dataset_release/.`` <br>**
    //答案已发放, 如: all_fact_triples_release.json, all_qs_dict_release.json, all_qs.dict_release_combine.json,
    ans_tntity_map.txt等等
 
-> ![NOTE]
- ```
-训练集和测试集说明
+> :star: 训练集和测试集说明
+```
 训练集（train_data 和 train_seen_data）： 
 用于训练模型的数据集。这些数据包括图片、相关的问题和正确的答案。模型通过学习这些问题与答案的对应关系，尝试理解和学习如何从给定的图像中提取信息以回答问题。
 train_data 用于常规的训练。
@@ -118,22 +110,27 @@ ids: 这个数据集可能包含与“features”数据集中每个图像或特�
 
 - 这里，features 数据集维度是 (3016, 2048, 14, 14),这个数据集可能是通过一个CNN（如ResNet）模型得到的，其中包含了 3016
   张图像经过模型处理后的特征图（每张图像对应 2048 个特征，每个特征是一个大小为 14x14 的小图像）:<br>
-    - 第一维：包含 3016 个元素，可能代表有 3016 个样本。<br>
-    - 第二维：包含 2048 个元素，可能代表每个样本有 2048 个特征。<br>
-    - 第三维：包含 14 个元素，配合第四维，可能代表每个特征是一个 14x14 的小图像。'''
+  
+  - 第一维：包含 3016 个元素，可能代表有 3016 个样本。<br>
+  - 第二维：包含 2048 个元素，可能代表每个样本有 2048 个特征。<br>
+  - 第三维：包含 14 个元素，配合第四维，可能代表每个特征是一个 14x14 的小图像。'''
 
 - Image feature:
+  
   - `fvqa-resnet-14x14.h5`这个文件从下面网址得到，还需要添加到上面的文件夹去.
     pretrained: [GoogleDrive](https://drive.google.com/file/d/1YG9hByw01_ZQ6_mKwehYiddG3x2Cxatu/view?usp=sharing)
     or [BaiduCloud(password:16vd)](https://pan.baidu.com/s/1ks84AWSXxJJ_7LwnzWdEnQ) https://pan.baidu.com/s/1ks84AWSXxJJ_7LwnzWdEnQ
+  
   - `fvqa36_imgid2idx.pkl` and `fvqa_36.hdf5`
     pretrained: [GoogleDrive](https://drive.google.com/file/d/1wfgmPhNF7DR7_yEAr8lxjtdsko7lLCWj/view?usp=sharing)
     or [BaiduCloud](https://pan.baidu.com/s/11KRiw2jvPBzgd3xUbynHjw?pwd=zsqa) (password:zsqa)
-
+  
   - Origin images are available at [FVQA](https://github.com/wangpengnorman/FVQA)
     with [download_link](https://www.dropbox.com/s/iyz6l7jhbt6jb7q/new_dataset_release.zip?dl=0).
+  
   - Other vqa dataset: you could generate a pretrained image feature via this
     way ([Guidance](https://github.com/hexiang-hu/answer_embedding/issues/3) / [code](https://github.com/Cyanogenoid/pytorch-vqa/blob/master/preprocess-images.py))
+  
   - The generated `.h` file should be placed in :
     ```data/KG_VQA/fvqa/exp_data/common_data/.```
 
