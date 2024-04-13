@@ -87,7 +87,7 @@ pytest-mock==3.14.0
    //答案已发放, 如: all_fact_triples_release.json, all_qs_dict_release.json, all_qs.dict_release_combine.json,
    ans_tntity_map.txt等等
 
-> [!NOTE]
+> ![NOTE]
  ```
 训练集和测试集说明
 训练集（train_data 和 train_seen_data）： 
