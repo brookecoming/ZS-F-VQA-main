@@ -80,7 +80,7 @@ pytest-mock==3.14.0
    //答案已发放, 如: all_fact_triples_release.json, all_qs_dict_release.json, all_qs.dict_release_combine.json,
    ans_tntity_map.txt等等
 
-> :star: 训练集和测试集说明
+:star: 训练集和测试集说明
 ```
 训练集（train_data 和 train_seen_data）： 
 用于训练模型的数据集。这些数据包括图片、相关的问题和正确的答案。模型通过学习这些问题与答案的对应关系，尝试理解和学习如何从给定的图像中提取信息以回答问题。
